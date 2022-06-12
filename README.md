@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# TRABALHO PRÁTICO 3 - SINCRONIZAÇÃO COM SEMÁFOROS 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Trabalho desenvolvido para a disciplina de C012 utilizando react para demonstrar a sincronização de threads utilizando semáforos
 
-## Available Scripts
+## Teoria
 
-In the project directory, you can run:
+Os carros dividem um recurso compartilhado que é o cruzamento, assim quando um carro faz uma requisição se o semáfaro tiver recursos dispóniveis (nenhum outro carro estiver atavessando o cruzamento) essa requisição é atendida, porém se não possuir recursos dispóniveis o carro é colocado em espera até ter recursos dispóniveis para atende-lo.
 
-### `npm start`
+## Funcões
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Botão iniciar`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ao clicar no botão iniciar é feito a requisição dos 4 carros simultâneamente para o semáforo.
 
-### `npm test`
+### `Botão reiniciar`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ao clicar no botão reiniciar os 4 carros voltam para a posição inicial.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demonstração
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Imagem do trabalho:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Demonstração](https://github.com/ItaloRez/C012---Trabalho-Semaforos/blob/main/src/assets/demo/demo.png)
