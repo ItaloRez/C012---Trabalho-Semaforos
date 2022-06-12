@@ -1,4 +1,4 @@
-# TRABALHO PRÁTICO 3 - SINCRONIZAÇÃO COM SEMÁFOROS 
+# TRABALHO PRÁTICO 3 - SINCRONIZAÇÃO COM SEMÁFOROS
 
 Trabalho desenvolvido para a disciplina de C012 utilizando react para demonstrar a sincronização de threads utilizando semáforos
 
@@ -16,9 +16,8 @@ Ao clicar no botão iniciar é feito a requisição dos 4 carros simultâneament
 
 Ao clicar no botão reiniciar os 4 carros voltam para a posição inicial.
 
-
 ## Demonstração
 
 Imagem do trabalho:
 
-![Demonstração](https://github.com/ItaloRez/C012---Trabalho-Semaforos/blob/main/src/assets/demo/demo.png)
+![Demonstração](https://github.com/ItaloRez/C012---Trabalho-Semaforos/blob/main/src/assets/demo/demo.gif)
