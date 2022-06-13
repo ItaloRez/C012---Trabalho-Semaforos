@@ -14,7 +14,7 @@ import carro2 from "./assets/carrinhos/carro2.png";
 import carro3 from "./assets/carrinhos/carro3.png";
 import carro4 from "./assets/carrinhos/carro4.png";
 
-import Semaphore from "./classes/Semaphore";
+import Semaforo from "./classes/Semaforo";
 
 function App() {
   const [carro1Active, setCarro1Active] = useState(false);
@@ -22,29 +22,29 @@ function App() {
   const [carro3Active, setCarro3Active] = useState(false);
   const [carro4Active, setCarro4Active] = useState(false);
 
-  const throttler = new Semaphore(1);
+  const semaforo = new Semaforo(1);
 
   function ativarCarro1() {
-    return new Promise((resolve, reject) => {
-      resolve(setCarro1Active(true));
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(setCarro1Active(true)), 1200);
     });
   }
 
   function ativarCarro2() {
-    return new Promise((resolve, reject) => {
-      resolve(setCarro2Active(true));
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(setCarro2Active(true)), 1200);
     });
   }
 
   function ativarCarro3() {
-    return new Promise((resolve, reject) => {
-      resolve(setCarro3Active(true));
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(setCarro3Active(true)), 1200);
     });
   }
 
   function ativarCarro4() {
-    return new Promise((resolve, reject) => {
-      resolve(setCarro4Active(true));
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(setCarro4Active(true)), 1200);
     });
   }
 
@@ -56,10 +56,10 @@ function App() {
   };
 
   const iniciar = () => {
-    throttler.callFunction(ativarCarro1);
-    throttler.callFunction(ativarCarro2);
-    throttler.callFunction(ativarCarro3);
-    throttler.callFunction(ativarCarro4);
+    semaforo.chamarFuncao(ativarCarro1);
+    semaforo.chamarFuncao(ativarCarro2);
+    semaforo.chamarFuncao(ativarCarro3);
+    semaforo.chamarFuncao(ativarCarro4);
   };
 
   return (
